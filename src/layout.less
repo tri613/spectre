@@ -7,10 +7,6 @@
   width: 100%;
   &:extend(.clearfix all);
 
-  &.grid-1280 {
-    max-width: 128rem + 2 * @layout-padding;
-  }
-
   &.grid-960 {
     max-width: 96rem + 2 * @layout-padding;
   }
@@ -43,7 +39,6 @@
 }
 .column {
   flex: 1;
-  max-width: 100%;
   padding: @layout-padding;
 
   &.col-12,
@@ -97,7 +92,7 @@
 .col-1 {
   width: 8.33333333%;
 }
-@media screen and (max-width: @size-xl ) {
+@media screen and (min-width: @size-xl ) {
   .col-xl-12,
   .col-xl-11,
   .col-xl-10,
@@ -149,7 +144,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (max-width: @size-lg ) {
+@media screen and (min-width: @size-lg ) {
   .col-lg-12,
   .col-lg-11,
   .col-lg-10,
@@ -201,7 +196,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (max-width: @size-md ) {
+@media screen and (min-width: @size-md ) {
   .col-md-12,
   .col-md-11,
   .col-md-10,
@@ -253,7 +248,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (max-width: @size-sm ) {
+@media screen and (min-width: @size-sm ) {
   .col-sm-12,
   .col-sm-11,
   .col-sm-10,
@@ -305,7 +300,7 @@
     width: 8.33333333%;
   }
 }
-@media screen and (max-width: @size-xs) {
+@media screen and (max-width: @size-sm) {
   .col-xs-12,
   .col-xs-11,
   .col-xs-10,
@@ -366,7 +361,7 @@
 .show-xl {
   display: none !important;
 }
-@media screen and (max-width: @size-xs) {
+@media screen and (max-width: @size-sm) {
   .hide-xs {
     display: none !important;
   }
@@ -374,7 +369,7 @@
     display: block !important;
   }
 }
-@media screen and (max-width: @size-sm) {
+@media screen and (min-width: @size-sm) {
   .hide-sm {
     display: none !important;
   }
@@ -382,7 +377,7 @@
     display: block !important;
   }
 }
-@media screen and (max-width: @size-md) {
+@media screen and (min-width: @size-md) {
   .hide-md {
     display: none !important;
   }
@@ -390,7 +385,7 @@
     display: block !important;
   }
 }
-@media screen and (max-width: @size-lg) {
+@media screen and (min-width: @size-lg) {
   .hide-lg {
     display: none !important;
   }
@@ -398,7 +393,7 @@
     display: block !important;
   }
 }
-@media screen and (max-width: @size-xl) {
+@media screen and (min-width: @size-xl) {
   .hide-xl {
     display: none !important;
   }
